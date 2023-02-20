@@ -16,9 +16,10 @@
 		"build": "cross-env PUBLIC_URL=/yokkepp/github-for-react react-scripts build",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
-		"deploy": "npm run build && gh-pages -d build"
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build"
 	},
-	"homepage": "https://yokkepp.github.io/github-for-react/",
+	"homepage": "https://yokkepp.github.io/github-for-react",
 	"eslintConfig": {
 		"extends": [
 			"react-app",
